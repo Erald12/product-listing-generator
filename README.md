@@ -132,17 +132,6 @@ A failed file is not remembered, so the next run retries it.
 - Output quality depends on the spec. Thin specs produce thin listings.
 - The sample specs are fictional.
 
-## Results
-
-Fill these in from your own measurements before sharing the repo.
-
-- Manual time to write one listing: about ___ minutes (average of ___ attempts)
-- Time to review and edit one generated draft: about ___ minutes
-- Estimated hours saved per month at ___ listings per month: ___
-- Drafts marked READY FOR REVIEW in testing: ___ of ___
-- Runs with status `ok` (from `run_log.csv`): ___ of ___
-- Measurement period: ___
-
 ## Tools
 
 Python 3.10+, the Anthropic API (Claude Haiku), and Claude Code for development.
