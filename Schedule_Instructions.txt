@@ -1,0 +1,16 @@
+Setup and First Run:
+cd D:\PythonProject\product-listing-generator
+..\.venv\Scripts\activate
+pip install -r requirements.txt
+copy .env.example .env
+mkdir output
+
+In Powershell (create task):
+schtasks /create /tn "ListingGenerator" /tr "D:\PythonProject\product-listing-generator\run_listing_generator.bat" /sc daily /st 07:00
+schtasks /run /tn "ListingGenerator"
+
+
+
+Delete tasks:
+Find tasks: schtasks /query /fo TABLE | findstr /i "Listing Digest QA"
+To delete: schtasks /delete /tn "ListingGenerator" /f
